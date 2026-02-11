@@ -1,0 +1,92 @@
+jQuery(document).ready(function($){
+
+$('.slideshow').slick({
+  dots: false,
+  arrows:false,
+  infinite: true,
+  speed: 600,
+  slidesToShow: 1,
+  autoplay: true,
+  autoplaySpeed: 3000,
+});
+
+$('.btn--menu').click(function(e){
+    e.preventDefault();
+    $(this).toggleClass('actived');
+    $('.menu').toggleClass('menuOpen');
+  })
+
+
+  $("a").on('click', function(event) {
+      console.log('yeehaw');
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top - 500
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+
+})
+
+let gallery = new SimpleLightbox('.project-gallery a', { /* options */ });
+
+const body = document.querySelector('body')
+
+const handleScroll = () => {
+  if(window.scrollY > 100){
+    body.classList.add('scrolled');
+  } else if(window.scrollY < 100){
+    body.classList.remove('scrolled');
+  }
+}
+
+window.addEventListener('scroll', handleScroll);
+
+const checkboxes = document.querySelectorAll('.checkbox');
+const displayCharts = document.querySelector('.display-charts');
+const charts = document.querySelectorAll('.pdf-chart');
+const selectForm = (e) => {
+  checkboxes.forEach( box => {
+    box.classList.remove('checked');
+  })
+  charts.forEach(chart => {
+    chart.classList.remove('viewable');
+  })
+  e.target.classList.add('checked');
+  displayCharts.querySelector(`.${e.target.dataset.type}`).classList.add('viewable');
+}
+
+checkboxes.forEach(box => {
+  box.addEventListener('click', selectForm);
+  
+})
+
+const menuButton = document.querySelector('.menu-icon__checkbox');
+const siteNav = document.querySelector('.site-nav');
+const siteHeader = document.querySelector('.site-header');
+
+const openMenu = () => {
+  siteHeader.classList.toggle('red');
+  siteNav.classList.toggle('openMenu');
+}
+menuButton.addEventListener('click', openMenu);
+
+
+AOS.init({
+  startEvent: 'load',
+});
+
+
