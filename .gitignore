@@ -1,0 +1,5 @@
+# build output is committed for GH Pages (served at root), so no ignore needed for dist
+node_modules/
+.env
+.env.local
+raw-src/

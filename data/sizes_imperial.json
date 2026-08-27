@@ -1,0 +1,1262 @@
+[
+ {
+  "pn": "99062",
+  "nominal": 0.625,
+  "min": 0.623,
+  "max": 0.627,
+  "func_width": 0.312,
+  "overall": 0.406,
+  "flange": 0.75,
+  "tool": 1.5
+ },
+ {
+  "pn": "99058",
+  "nominal": 0.63,
+  "min": 0.626,
+  "max": 0.63,
+  "func_width": 0.312,
+  "overall": 0.437,
+  "flange": 0.75,
+  "tool": 1.5
+ },
+ {
+  "pn": "99076",
+  "nominal": 0.75,
+  "min": 0.748,
+  "max": 0.752,
+  "func_width": 0.312,
+  "overall": 0.437,
+  "flange": 0.938,
+  "tool": 1.5
+ },
+ {
+  "pn": "99078",
+  "nominal": 0.787,
+  "min": 0.785,
+  "max": 0.789,
+  "func_width": 0.315,
+  "overall": 0.433,
+  "flange": 0.93,
+  "tool": 1.312
+ },
+ {
+  "pn": "99085",
+  "nominal": 0.866,
+  "min": 0.861,
+  "max": 0.866,
+  "func_width": 0.315,
+  "overall": 0.472,
+  "flange": 1.155,
+  "tool": 1.5
+ },
+ {
+  "pn": "99087",
+  "nominal": 0.875,
+  "min": 0.873,
+  "max": 0.877,
+  "func_width": 0.312,
+  "overall": 0.437,
+  "flange": 1.093,
+  "tool": 1.5
+ },
+ {
+  "pn": "99098",
+  "nominal": 0.984,
+  "min": 0.982,
+  "max": 0.986,
+  "func_width": 0.315,
+  "overall": 0.433,
+  "flange": 1.3,
+  "tool": 1.805
+ },
+ {
+  "pn": "99100",
+  "nominal": 1.0,
+  "min": 0.998,
+  "max": 1.002,
+  "func_width": 0.312,
+  "overall": 0.437,
+  "flange": 1.22,
+  "tool": 1.805
+ },
+ {
+  "pn": "99101",
+  "nominal": 1.0,
+  "min": 0.998,
+  "max": 1.002,
+  "func_width": 0.312,
+  "overall": 0.437,
+  "flange": 1.22,
+  "tool": 1.805
+ },
+ {
+  "pn": "99112",
+  "nominal": 1.125,
+  "min": 1.123,
+  "max": 1.127,
+  "func_width": 0.312,
+  "overall": 0.437,
+  "flange": 1.5,
+  "tool": 0.875
+ },
+ {
+  "pn": "99116",
+  "nominal": 1.125,
+  "min": 1.123,
+  "max": 1.127,
+  "func_width": 0.375,
+  "overall": 0.5,
+  "flange": 1.5,
+  "tool": 0.875
+ },
+ {
+  "pn": "99114",
+  "nominal": 1.181,
+  "min": 1.179,
+  "max": 1.184,
+  "func_width": 0.315,
+  "overall": 0.433,
+  "flange": 1.4,
+  "tool": 0.875
+ },
+ {
+  "pn": "99118",
+  "nominal": 1.188,
+  "min": 1.185,
+  "max": 1.19,
+  "func_width": 0.312,
+  "overall": 0.437,
+  "flange": 1.4,
+  "tool": 0.875
+ },
+ {
+  "pn": "99125",
+  "nominal": 1.252,
+  "min": 1.247,
+  "max": 1.253,
+  "func_width": 0.312,
+  "overall": 0.437,
+  "flange": 1.5,
+  "tool": 0.875
+ },
+ {
+  "pn": "99128",
+  "nominal": 1.26,
+  "min": 1.257,
+  "max": 1.263,
+  "func_width": 0.312,
+  "overall": 0.437,
+  "flange": 1.5,
+  "tool": 0.875
+ },
+ {
+  "pn": "99131",
+  "nominal": 1.312,
+  "min": 1.31,
+  "max": 1.316,
+  "func_width": 0.5,
+  "overall": 0.625,
+  "flange": 1.594,
+  "tool": 1.0
+ },
+ {
+  "pn": "99138",
+  "nominal": 1.375,
+  "min": 1.371,
+  "max": 1.377,
+  "func_width": 0.512,
+  "overall": 0.63,
+  "flange": 1.637,
+  "tool": 1.0
+ },
+ {
+  "pn": "99139",
+  "nominal": 1.375,
+  "min": 1.375,
+  "max": 1.381,
+  "func_width": 0.512,
+  "overall": 0.63,
+  "flange": 1.637,
+  "tool": 1.0
+ },
+ {
+  "pn": "99143",
+  "nominal": 1.438,
+  "min": 1.432,
+  "max": 1.438,
+  "func_width": 0.562,
+  "overall": 0.688,
+  "flange": 1.78,
+  "tool": 1.2
+ },
+ {
+  "pn": "99144",
+  "nominal": 1.438,
+  "min": 1.435,
+  "max": 1.441,
+  "func_width": 0.375,
+  "overall": 0.5,
+  "flange": 1.78,
+  "tool": 1.2
+ },
+ {
+  "pn": "99147",
+  "nominal": 1.496,
+  "min": 1.49,
+  "max": 1.496,
+  "func_width": 0.512,
+  "overall": 0.669,
+  "flange": 1.78,
+  "tool": 1.2
+ },
+ {
+  "pn": "99149",
+  "nominal": 1.5,
+  "min": 1.497,
+  "max": 1.503,
+  "func_width": 0.562,
+  "overall": 0.688,
+  "flange": 1.8,
+  "tool": 1.2
+ },
+ {
+  "pn": "99150",
+  "nominal": 1.5,
+  "min": 1.497,
+  "max": 1.503,
+  "func_width": 0.375,
+  "overall": 0.5,
+  "flange": 1.8,
+  "tool": 1.2
+ },
+ {
+  "pn": "99152",
+  "nominal": 1.523,
+  "min": 1.52,
+  "max": 1.526,
+  "func_width": 0.438,
+  "overall": 0.563,
+  "flange": 1.8,
+  "tool": 1.2
+ },
+ {
+  "pn": "99155",
+  "nominal": 1.552,
+  "min": 1.549,
+  "max": 1.555,
+  "func_width": 0.438,
+  "overall": 0.563,
+  "flange": 1.8,
+  "tool": 1.19
+ },
+ {
+  "pn": "99156",
+  "nominal": 1.563,
+  "min": 1.559,
+  "max": 1.565,
+  "func_width": 0.562,
+  "overall": 0.688,
+  "flange": 1.8,
+  "tool": 1.19
+ },
+ {
+  "pn": "99157",
+  "nominal": 1.578,
+  "min": 1.572,
+  "max": 1.578,
+  "func_width": 0.512,
+  "overall": 0.63,
+  "flange": 1.8,
+  "tool": 1.19
+ },
+ {
+  "pn": "99162",
+  "nominal": 1.625,
+  "min": 1.622,
+  "max": 1.628,
+  "func_width": 0.562,
+  "overall": 0.688,
+  "flange": 1.875,
+  "tool": 1.19
+ },
+ {
+  "pn": "99169",
+  "nominal": 1.65,
+  "min": 1.647,
+  "max": 1.654,
+  "func_width": 0.562,
+  "overall": 0.688,
+  "flange": 1.875,
+  "tool": 1.19
+ },
+ {
+  "pn": "99168",
+  "nominal": 1.688,
+  "min": 1.684,
+  "max": 1.69,
+  "func_width": 0.562,
+  "overall": 0.688,
+  "flange": 1.906,
+  "tool": 1.09
+ },
+ {
+  "pn": "99171",
+  "nominal": 1.719,
+  "min": 1.715,
+  "max": 1.721,
+  "func_width": 0.562,
+  "overall": 0.688,
+  "flange": 2.062,
+  "tool": 1.09
+ },
+ {
+  "pn": "99170",
+  "nominal": 1.739,
+  "min": 1.736,
+  "max": 1.742,
+  "func_width": 0.375,
+  "overall": 0.5,
+  "flange": 2.062,
+  "tool": 1.09
+ },
+ {
+  "pn": "99181",
+  "nominal": 1.813,
+  "min": 1.809,
+  "max": 1.815,
+  "func_width": 0.562,
+  "overall": 0.688,
+  "flange": 2.09,
+  "tool": 1.25
+ },
+ {
+  "pn": "99187",
+  "nominal": 1.875,
+  "min": 1.872,
+  "max": 1.878,
+  "func_width": 0.562,
+  "overall": 0.688,
+  "flange": 2.203,
+  "tool": 1.25
+ },
+ {
+  "pn": "99189",
+  "nominal": 1.891,
+  "min": 1.887,
+  "max": 1.893,
+  "func_width": 0.562,
+  "overall": 0.688,
+  "flange": 2.203,
+  "tool": 1.25
+ },
+ {
+  "pn": "99192",
+  "nominal": 1.912,
+  "min": 1.909,
+  "max": 1.915,
+  "func_width": 0.375,
+  "overall": 0.5,
+  "flange": 2.22,
+  "tool": 1.23
+ },
+ {
+  "pn": "99193",
+  "nominal": 1.938,
+  "min": 1.934,
+  "max": 1.94,
+  "func_width": 0.562,
+  "overall": 0.688,
+  "flange": 2.22,
+  "tool": 1.23
+ },
+ {
+  "pn": "99196",
+  "nominal": 1.969,
+  "min": 1.965,
+  "max": 1.971,
+  "func_width": 0.551,
+  "overall": 0.668,
+  "flange": 2.224,
+  "tool": 1.23
+ },
+ {
+  "pn": "99199",
+  "nominal": 2.0,
+  "min": 1.997,
+  "max": 2.003,
+  "func_width": 0.562,
+  "overall": 0.688,
+  "flange": 2.406,
+  "tool": 1.23
+ },
+ {
+  "pn": "99200",
+  "nominal": 2.0,
+  "min": 1.997,
+  "max": 2.003,
+  "func_width": 0.875,
+  "overall": 1.0,
+  "flange": 2.406,
+  "tool": 1.23
+ },
+ {
+  "pn": "99205",
+  "nominal": 2.063,
+  "min": 2.057,
+  "max": 2.063,
+  "func_width": 0.781,
+  "overall": 0.938,
+  "flange": 2.469,
+  "tool": 1.42
+ },
+ {
+  "pn": "99210",
+  "nominal": 2.125,
+  "min": 2.123,
+  "max": 2.128,
+  "func_width": 0.5,
+  "overall": 0.75,
+  "flange": 2.442,
+  "tool": 1.42
+ },
+ {
+  "pn": "99212",
+  "nominal": 2.125,
+  "min": 2.124,
+  "max": 2.13,
+  "func_width": 0.78,
+  "overall": 0.937,
+  "flange": 2.422,
+  "tool": 1.42
+ },
+ {
+  "pn": "99215",
+  "nominal": 2.165,
+  "min": 2.162,
+  "max": 2.168,
+  "func_width": 0.787,
+  "overall": 0.905,
+  "flange": 2.441,
+  "tool": 1.295
+ },
+ {
+  "pn": "99218",
+  "nominal": 2.188,
+  "min": 2.186,
+  "max": 2.192,
+  "func_width": 0.78,
+  "overall": 0.938,
+  "flange": 2.5,
+  "tool": 1.295
+ },
+ {
+  "pn": "99220",
+  "nominal": 2.205,
+  "min": 2.198,
+  "max": 2.205,
+  "func_width": 0.5,
+  "overall": 0.625,
+  "flange": 2.5,
+  "tool": 1.295
+ },
+ {
+  "pn": "99225",
+  "nominal": 2.25,
+  "min": 2.249,
+  "max": 2.255,
+  "func_width": 0.78,
+  "overall": 0.938,
+  "flange": 2.53,
+  "tool": 1.295
+ },
+ {
+  "pn": "99227",
+  "nominal": 2.25,
+  "min": 2.249,
+  "max": 2.255,
+  "func_width": 0.312,
+  "overall": 0.438,
+  "flange": 2.53,
+  "tool": 1.295
+ },
+ {
+  "pn": "99235",
+  "nominal": 2.362,
+  "min": 2.359,
+  "max": 2.365,
+  "func_width": 0.787,
+  "overall": 0.905,
+  "flange": 2.785,
+  "tool": 1.61
+ },
+ {
+  "pn": "99241",
+  "nominal": 2.362,
+  "min": 2.359,
+  "max": 2.365,
+  "func_width": 0.37,
+  "overall": 0.45,
+  "flange": 2.785,
+  "tool": 1.61
+ },
+ {
+  "pn": "99237",
+  "nominal": 2.375,
+  "min": 2.374,
+  "max": 2.38,
+  "func_width": 0.78,
+  "overall": 0.938,
+  "flange": 2.75,
+  "tool": 1.61
+ },
+ {
+  "pn": "99240",
+  "nominal": 2.375,
+  "min": 2.374,
+  "max": 2.38,
+  "func_width": 0.526,
+  "overall": 0.638,
+  "flange": 2.75,
+  "tool": 1.61
+ },
+ {
+  "pn": "99238",
+  "nominal": 2.375,
+  "min": 2.372,
+  "max": 2.378,
+  "func_width": 0.593,
+  "overall": 0.75,
+  "flange": 2.75,
+  "tool": 1.61
+ },
+ {
+  "pn": "99242",
+  "nominal": 2.437,
+  "min": 2.435,
+  "max": 2.441,
+  "func_width": 0.5,
+  "overall": 0.625,
+  "flange": 2.828,
+  "tool": 1.61
+ },
+ {
+  "pn": "99243",
+  "nominal": 2.438,
+  "min": 2.434,
+  "max": 2.44,
+  "func_width": 0.78,
+  "overall": 0.938,
+  "flange": 2.828,
+  "tool": 1.61
+ },
+ {
+  "pn": "99244",
+  "nominal": 2.441,
+  "min": 2.434,
+  "max": 2.441,
+  "func_width": 0.5,
+  "overall": 0.625,
+  "flange": 2.828,
+  "tool": 1.61
+ },
+ {
+  "pn": "99249",
+  "nominal": 2.492,
+  "min": 2.489,
+  "max": 2.495,
+  "func_width": 0.781,
+  "overall": 0.938,
+  "flange": 2.82,
+  "tool": 1.61
+ },
+ {
+  "pn": "99250",
+  "nominal": 2.5,
+  "min": 2.5,
+  "max": 2.506,
+  "func_width": 0.78,
+  "overall": 0.938,
+  "flange": 2.82,
+  "tool": 1.61
+ },
+ {
+  "pn": "99248",
+  "nominal": 2.5,
+  "min": 2.5,
+  "max": 2.506,
+  "func_width": 0.5,
+  "overall": 0.656,
+  "flange": 2.82,
+  "tool": 1.61
+ },
+ {
+  "pn": "99253",
+  "nominal": 2.5,
+  "min": 2.497,
+  "max": 2.503,
+  "func_width": 0.555,
+  "overall": 0.656,
+  "flange": 2.82,
+  "tool": 1.61
+ },
+ {
+  "pn": "99251",
+  "nominal": 2.516,
+  "min": 2.51,
+  "max": 2.516,
+  "func_width": 0.78,
+  "overall": 0.938,
+  "flange": 2.82,
+  "tool": 1.61
+ },
+ {
+  "pn": "99254",
+  "nominal": 2.559,
+  "min": 2.556,
+  "max": 2.562,
+  "func_width": 0.787,
+  "overall": 0.938,
+  "flange": 2.85,
+  "tool": 1.61
+ },
+ {
+  "pn": "99256",
+  "nominal": 2.563,
+  "min": 2.56,
+  "max": 2.566,
+  "func_width": 0.78,
+  "overall": 0.938,
+  "flange": 2.85,
+  "tool": 1.61
+ },
+ {
+  "pn": "99255",
+  "nominal": 2.563,
+  "min": 2.56,
+  "max": 2.566,
+  "func_width": 1.0,
+  "overall": 1.1,
+  "flange": 2.85,
+  "tool": 1.61
+ },
+ {
+  "pn": "99259",
+  "nominal": 2.598,
+  "min": 2.595,
+  "max": 2.601,
+  "func_width": 0.78,
+  "overall": 0.938,
+  "flange": 2.99,
+  "tool": 1.61
+ },
+ {
+  "pn": "99261",
+  "nominal": 2.621,
+  "min": 2.618,
+  "max": 2.624,
+  "func_width": 0.78,
+  "overall": 0.938,
+  "flange": 2.99,
+  "tool": 1.61
+ },
+ {
+  "pn": "99260",
+  "nominal": 2.625,
+  "min": 6.622,
+  "max": 2.628,
+  "func_width": 0.5,
+  "overall": 0.625,
+  "flange": 2.99,
+  "tool": 1.61
+ },
+ {
+  "pn": "99262",
+  "nominal": 2.625,
+  "min": 2.625,
+  "max": 2.631,
+  "func_width": 0.78,
+  "overall": 0.938,
+  "flange": 3.047,
+  "tool": 1.61
+ },
+ {
+  "pn": "99264",
+  "nominal": 2.625,
+  "min": 2.621,
+  "max": 2.627,
+  "func_width": 0.78,
+  "overall": 0.906,
+  "flange": 3.047,
+  "tool": 1.61
+ },
+ {
+  "pn": "99272",
+  "nominal": 2.75,
+  "min": 2.75,
+  "max": 2.756,
+  "func_width": 0.406,
+  "overall": 0.563,
+  "flange": 3.125,
+  "tool": 1.437
+ },
+ {
+  "pn": "99274",
+  "nominal": 2.75,
+  "min": 2.745,
+  "max": 2.751,
+  "func_width": 0.78,
+  "overall": 0.938,
+  "flange": 3.125,
+  "tool": 1.437
+ },
+ {
+  "pn": "99275",
+  "nominal": 2.75,
+  "min": 2.75,
+  "max": 2.756,
+  "func_width": 0.78,
+  "overall": 0.938,
+  "flange": 3.125,
+  "tool": 1.437
+ },
+ {
+  "pn": "99276",
+  "nominal": 2.756,
+  "min": 2.753,
+  "max": 2.759,
+  "func_width": 0.787,
+  "overall": 0.945,
+  "flange": 3.125,
+  "tool": 1.437
+ },
+ {
+  "pn": "99284",
+  "nominal": 2.835,
+  "min": 2.828,
+  "max": 2.835,
+  "func_width": 0.752,
+  "overall": 0.874,
+  "flange": 3.225,
+  "tool": 1.375
+ },
+ {
+  "pn": "99282",
+  "nominal": 2.838,
+  "min": 2.838,
+  "max": 2.844,
+  "func_width": 0.5,
+  "overall": 0.656,
+  "flange": 3.225,
+  "tool": 1.375
+ },
+ {
+  "pn": "99287",
+  "nominal": 2.875,
+  "min": 2.873,
+  "max": 2.879,
+  "func_width": 0.78,
+  "overall": 0.938,
+  "flange": 3.22,
+  "tool": 1.375
+ },
+ {
+  "pn": "99290",
+  "nominal": 2.938,
+  "min": 2.937,
+  "max": 2.943,
+  "func_width": 0.5,
+  "overall": 0.641,
+  "flange": 3.344,
+  "tool": 1.53
+ },
+ {
+  "pn": "99293",
+  "nominal": 2.938,
+  "min": 2.937,
+  "max": 2.943,
+  "func_width": 0.78,
+  "overall": 0.937,
+  "flange": 3.344,
+  "tool": 1.53
+ },
+ {
+  "pn": "99289",
+  "nominal": 2.953,
+  "min": 2.95,
+  "max": 2.956,
+  "func_width": 0.594,
+  "overall": 0.688,
+  "flange": 3.305,
+  "tool": 1.53
+ },
+ {
+  "pn": "99294",
+  "nominal": 2.953,
+  "min": 2.95,
+  "max": 2.956,
+  "func_width": 0.866,
+  "overall": 1.024,
+  "flange": 3.305,
+  "tool": 1.53
+ },
+ {
+  "pn": "99298",
+  "nominal": 2.993,
+  "min": 2.99,
+  "max": 2.996,
+  "func_width": 0.562,
+  "overall": 0.688,
+  "flange": 3.36,
+  "tool": 1.53
+ },
+ {
+  "pn": "99299",
+  "nominal": 2.993,
+  "min": 2.99,
+  "max": 2.996,
+  "func_width": 0.812,
+  "overall": 1.0,
+  "flange": 3.36,
+  "tool": 1.53
+ },
+ {
+  "pn": "99300",
+  "nominal": 3.0,
+  "min": 3.0,
+  "max": 3.006,
+  "func_width": 0.812,
+  "overall": 1.0,
+  "flange": 3.235,
+  "tool": 1.53
+ },
+ {
+  "pn": "99303",
+  "nominal": 3.0,
+  "min": 3.0,
+  "max": 3.006,
+  "func_width": 0.625,
+  "overall": 0.812,
+  "flange": 3.345,
+  "tool": 1.53
+ },
+ {
+  "pn": "99307",
+  "nominal": 3.125,
+  "min": 3.124,
+  "max": 3.132,
+  "func_width": 0.551,
+  "overall": 0.709,
+  "flange": 3.531,
+  "tool": 2.063
+ },
+ {
+  "pn": "99311",
+  "nominal": 3.125,
+  "min": 3.12,
+  "max": 3.126,
+  "func_width": 0.688,
+  "overall": 0.813,
+  "flange": 3.531,
+  "tool": 2.063
+ },
+ {
+  "pn": "99312",
+  "nominal": 3.125,
+  "min": 3.12,
+  "max": 3.126,
+  "func_width": 0.813,
+  "overall": 0.97,
+  "flange": 3.531,
+  "tool": 2.063
+ },
+ {
+  "pn": "99313",
+  "nominal": 3.146,
+  "min": 3.142,
+  "max": 3.15,
+  "func_width": 0.75,
+  "overall": 0.886,
+  "flange": 3.531,
+  "tool": 2.063
+ },
+ {
+  "pn": "99315",
+  "nominal": 3.15,
+  "min": 3.146,
+  "max": 3.153,
+  "func_width": 0.813,
+  "overall": 0.97,
+  "flange": 3.531,
+  "tool": 2.063
+ },
+ {
+  "pn": "99317",
+  "nominal": 3.15,
+  "min": 3.146,
+  "max": 3.153,
+  "func_width": 0.433,
+  "overall": 0.591,
+  "flange": 3.531,
+  "tool": 2.063
+ },
+ {
+  "pn": "99322",
+  "nominal": 3.25,
+  "min": 3.247,
+  "max": 3.253,
+  "func_width": 0.812,
+  "overall": 1.0,
+  "flange": 3.575,
+  "tool": 1.578
+ },
+ {
+  "pn": "99325",
+  "nominal": 3.25,
+  "min": 3.25,
+  "max": 3.256,
+  "func_width": 0.812,
+  "overall": 1.0,
+  "flange": 3.575,
+  "tool": 1.578
+ },
+ {
+  "pn": "99324",
+  "nominal": 3.25,
+  "min": 3.25,
+  "max": 3.256,
+  "func_width": 0.595,
+  "overall": 0.72,
+  "flange": 3.575,
+  "tool": 1.578
+ },
+ {
+  "pn": "99332",
+  "nominal": 3.342,
+  "min": 3.337,
+  "max": 3.347,
+  "func_width": 0.669,
+  "overall": 0.827,
+  "flange": 3.688,
+  "tool": 1.594
+ },
+ {
+  "pn": "99333",
+  "nominal": 3.342,
+  "min": 3.337,
+  "max": 3.347,
+  "func_width": 0.827,
+  "overall": 0.984,
+  "flange": 3.688,
+  "tool": 1.594
+ },
+ {
+  "pn": "99351",
+  "nominal": 3.543,
+  "min": 3.54,
+  "max": 3.546,
+  "func_width": 0.71,
+  "overall": 0.926,
+  "flange": 3.9,
+  "tool": 1.875
+ },
+ {
+  "pn": "99353",
+  "nominal": 3.543,
+  "min": 3.54,
+  "max": 3.546,
+  "func_width": 0.526,
+  "overall": 0.667,
+  "flange": 3.9,
+  "tool": 1.875
+ },
+ {
+  "pn": "99356",
+  "nominal": 3.563,
+  "min": 3.56,
+  "max": 3.566,
+  "func_width": 0.812,
+  "overall": 0.926,
+  "flange": 3.9,
+  "tool": 1.875
+ },
+ {
+  "pn": "99360",
+  "nominal": 3.621,
+  "min": 3.618,
+  "max": 3.624,
+  "func_width": 0.812,
+  "overall": 1.0,
+  "flange": 4.03,
+  "tool": 1.875
+ },
+ {
+  "pn": "99362",
+  "nominal": 3.625,
+  "min": 3.622,
+  "max": 3.629,
+  "func_width": 0.812,
+  "overall": 1.0,
+  "flange": 4.03,
+  "tool": 1.875
+ },
+ {
+  "pn": "99363",
+  "nominal": 3.626,
+  "min": 3.623,
+  "max": 3.629,
+  "func_width": 0.5,
+  "overall": 0.625,
+  "flange": 4.03,
+  "tool": 1.875
+ },
+ {
+  "pn": "99369",
+  "nominal": 3.74,
+  "min": 3.737,
+  "max": 3.743,
+  "func_width": 0.827,
+  "overall": 0.945,
+  "flange": 4.03,
+  "tool": 1.875
+ },
+ {
+  "pn": "99374",
+  "nominal": 3.74,
+  "min": 3.74,
+  "max": 3.746,
+  "func_width": 0.344,
+  "overall": 0.5,
+  "flange": 4.03,
+  "tool": 1.875
+ },
+ {
+  "pn": "99364",
+  "nominal": 3.74,
+  "min": 3.74,
+  "max": 3.746,
+  "func_width": 0.469,
+  "overall": 0.594,
+  "flange": 4.03,
+  "tool": 1.875
+ },
+ {
+  "pn": "99367",
+  "nominal": 3.75,
+  "min": 3.75,
+  "max": 3.756,
+  "func_width": 0.344,
+  "overall": 0.5,
+  "flange": 4.025,
+  "tool": 1.875
+ },
+ {
+  "pn": "99372",
+  "nominal": 3.75,
+  "min": 3.75,
+  "max": 3.756,
+  "func_width": 0.688,
+  "overall": 0.875,
+  "flange": 4.03,
+  "tool": 1.875
+ },
+ {
+  "pn": "99376",
+  "nominal": 3.75,
+  "min": 3.746,
+  "max": 3.752,
+  "func_width": 0.563,
+  "overall": 0.688,
+  "flange": 4.03,
+  "tool": 1.875
+ },
+ {
+  "pn": "99387",
+  "nominal": 3.875,
+  "min": 3.873,
+  "max": 3.875,
+  "func_width": 0.813,
+  "overall": 1.0,
+  "flange": 4.185,
+  "tool": 2.187
+ },
+ {
+  "pn": "99393",
+  "nominal": 3.937,
+  "min": 3.935,
+  "max": 3.941,
+  "func_width": 0.813,
+  "overall": 1.0,
+  "flange": 4.312,
+  "tool": 2.187
+ },
+ {
+  "pn": "99395",
+  "nominal": 4.0,
+  "min": 3.998,
+  "max": 4.006,
+  "func_width": 0.6,
+  "overall": 0.725,
+  "flange": 4.375,
+  "tool": 2.187
+ },
+ {
+  "pn": "99399",
+  "nominal": 4.0,
+  "min": 3.998,
+  "max": 4.006,
+  "func_width": 0.812,
+  "overall": 1.0,
+  "flange": 4.375,
+  "tool": 2.187
+ },
+ {
+  "pn": "99400",
+  "nominal": 4.0,
+  "min": 3.998,
+  "max": 4.006,
+  "func_width": 0.65,
+  "overall": 0.775,
+  "flange": 4.375,
+  "tool": 2.187
+ },
+ {
+  "pn": "99401",
+  "nominal": 4.0,
+  "min": 3.998,
+  "max": 4.006,
+  "func_width": 0.5,
+  "overall": 0.625,
+  "flange": 4.375,
+  "tool": 2.187
+ },
+ {
+  "pn": "99424",
+  "nominal": 4.25,
+  "min": 4.248,
+  "max": 4.256,
+  "func_width": 0.812,
+  "overall": 1.0,
+  "flange": 4.61,
+  "tool": 1.75
+ },
+ {
+  "pn": "99437",
+  "nominal": 4.375,
+  "min": 4.37,
+  "max": 3.378,
+  "func_width": 0.812,
+  "overall": 1.0,
+  "flange": 4.75,
+  "tool": 1.75
+ },
+ {
+  "pn": "99450",
+  "nominal": 4.5,
+  "min": 4.496,
+  "max": 4.504,
+  "func_width": 0.813,
+  "overall": 0.97,
+  "flange": 4.9,
+  "tool": 1.5
+ },
+ {
+  "pn": "99452",
+  "nominal": 4.528,
+  "min": 4.523,
+  "max": 4.531,
+  "func_width": 0.813,
+  "overall": 0.97,
+  "flange": 4.9,
+  "tool": 1.5
+ },
+ {
+  "pn": "99492",
+  "nominal": 4.921,
+  "min": 4.917,
+  "max": 4.925,
+  "func_width": 1.024,
+  "overall": 1.26,
+  "flange": 5.4,
+  "tool": 1.733
+ },
+ {
+  "pn": "99498",
+  "nominal": 5.0,
+  "min": 4.998,
+  "max": 5.006,
+  "func_width": 0.688,
+  "overall": 0.875,
+  "flange": 5.39,
+  "tool": 1.733
+ },
+ {
+  "pn": "99499",
+  "nominal": 5.0,
+  "min": 4.998,
+  "max": 5.006,
+  "func_width": 0.812,
+  "overall": 1.0,
+  "flange": 5.39,
+  "tool": 1.733
+ },
+ {
+  "pn": "99525",
+  "nominal": 5.25,
+  "min": 5.246,
+  "max": 5.254,
+  "func_width": 0.812,
+  "overall": 1.0,
+  "flange": 5.56,
+  "tool": 1.484
+ },
+ {
+  "pn": "99549",
+  "nominal": 5.5,
+  "min": 5.498,
+  "max": 5.506,
+  "func_width": 0.812,
+  "overall": 1.0,
+  "flange": 5.938,
+  "tool": 1.484
+ },
+ {
+  "pn": "99552",
+  "nominal": 5.512,
+  "min": 5.508,
+  "max": 5.516,
+  "func_width": 0.807,
+  "overall": 1.0,
+  "flange": 5.938,
+  "tool": 1.484
+ },
+ {
+  "pn": "99599",
+  "nominal": 6.0,
+  "min": 5.995,
+  "max": 6.003,
+  "func_width": 1.0,
+  "overall": 1.25,
+  "flange": 6.375,
+  "tool": 2.032
+ },
+ {
+  "pn": "99650",
+  "nominal": 6.5,
+  "min": 6.495,
+  "max": 6.505,
+  "func_width": 1.0,
+  "overall": 1.25,
+  "flange": 7.0,
+  "tool": 2.0
+ },
+ {
+  "pn": "99700",
+  "nominal": 7.0,
+  "min": 6.995,
+  "max": 7.005,
+  "func_width": 1.0,
+  "overall": 1.25,
+  "flange": 7.475,
+  "tool": 2.062
+ }
+]
