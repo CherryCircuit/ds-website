@@ -255,7 +255,7 @@ img { max-width: 100%; display: block; }
 .spec-table{width:100%;border-collapse:collapse}
 .spec-table td, .spec-table th{padding:12px 14px;border-bottom:1px solid var(--line-dark);text-align:left;font-size:14.5px}
 .spec-table th{color:var(--paper-2);width:42%}
-.spec-table td{color:var(--paper)}
+.spec-table td{color:#dfe6f0}
 
 /* ---------- Calculator ---------- */
 .calc{display:grid;grid-template-columns:1fr 1.2fr;gap:30px}
