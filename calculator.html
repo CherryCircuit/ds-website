@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>DuraSleeve Cost Savings Calculator | Repair vs Rebuild</title>
+  <meta name="description" content="Estimate the cost of a shaft repair with a DuraSleeve compared with a shaft rebuild — including parts, labor and the real cost of downtime. Based on the documented side-by-side test." />
+  <link rel="icon" href="/ds-website/media/Dura-Sleeve-Inc-1C.webp" />
+  <link rel="stylesheet" href="/ds-website/site.css" />
+</head>
+<body>
+  <header class="hdr"><div class="hdr-inner"></div></header>
+
+  <section class="hero" style="min-height:46vh;">
+    <div class="overlay"></div>
+    <div class="content">
+      <p class="crumbs"><a href="/ds-website/index.html">Home</a> / Calculator</p>
+      <span class="eyebrow">Cost savings calculator</span>
+      <h1>Repair vs rebuild: the real cost</h1>
+      <p class="lead">A true cost comparison goes beyond the initial purchase. Estimate what a DuraSleeve repair saves you versus a full shaft rebuild — including the cost of downtime.</p>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="wrap">
+      <div class="calc">
+        <div class="inputs" style="background:#fff;border:1px solid var(--line-light);border-radius:var(--radius);padding:28px;" data-reveal>
+          <h3 style="margin:0 0 6px;">Enter your scenario</h3>
+          <p class="muted" style="margin:0 0 18px;font-size:14px;">Defaults are from DuraSleeve's documented comparison but adjust them to your situation.</p>
+          <div class="field">
+            <label>Number of shafts to repair</label>
+            <input type="number" id="numshafts" value="1" min="1" step="1" />
+          </div>
+          <div class="row" style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
+            <div class="field">
+              <label>Rebuild cost (parts + labor)</label>
+              <input type="number" id="rebuild" value="2700" min="0" step="50" />
+            </div>
+            <div class="field">
+              <label>Downtime cost per day</label>
+              <input type="number" id="downrate" value="2200" min="0" step="50" />
+            </div>
+          </div>
+          <div class="row" style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
+            <div class="field">
+              <label>Days of downtime per rebuild</label>
+              <input type="number" id="days" value="4" min="0" step="1" />
+            </div>
+            <div class="field">
+              <label>DuraSleeve cost</label>
+              <input type="number" id="sleevecost" value="56" min="0" step="1" />
+            </div>
+          </div>
+          <div class="field">
+            <label>Economy sleeve cost (alternative)</label>
+            <input type="number" id="altcost" value="50" min="0" step="1" />
+          </div>
+          <button class="btn btn-blue btn-lg" id="calcbtn">Calculate my savings</button>
+        </div>
+
+        <div class="calc-output" data-reveal data-reveal-delay="1">
+          <p class="muted" style="margin:0 0 6px;font-size:13px;text-transform:uppercase;letter-spacing:.1em;">Estimated 3-year cost</p>
+          <div id="years" style="margin-bottom:18px;">—</div>
+          <div id="big" class="big">—</div>
+          <p class="muted" id="biglab" style="margin:8px 0 24px;">Savings with DuraSleeve</p>
+          <div id="rows"></div>
+          <p class="muted" style="font-size:12px;margin-top:20px;">Model based on DuraSleeve's documented comparison: an economy sleeve fails and requires a 2nd rebuild, while DuraSleeve lasts longer. "At least 2x longer" in real-world testing. Adjust inputs to your application.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec dark">
+    <div class="wrap center">
+      <div class="sec-head" style="margin:0 auto;" data-reveal>
+        <h2>Why the comparison matters</h2>
+        <p>Downtime and rebuild cost are far bigger than the sleeve price. A sleeve that lasts longer is one you fix fewer times.</p>
+      </div>
+      <div class="metric-row">
+        <div class="metric" data-reveal><div class="num">2,700</div><div class="lab">Typical gearbox rebuild cost, parts + labor</div></div>
+        <div class="metric" data-reveal data-reveal-delay="1"><div class="num">2,200</div><div class="lab">Downtime cost per day</div></div>
+        <div class="metric" data-reveal data-reveal-delay="2"><div class="num">3,400</div><div class="lab">Hours an economy sleeve lasts before failing</div></div>
+        <div class="metric" data-reveal data-reveal-delay="3"><div class="num">7,900</div><div class="lab">Hours of integrity in the DuraSleeve test</div></div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="ftr"></footer>
+  <script>
+    window.__BASE__ = '/ds-website';
+  </script>
+  <script src="/ds-website/site.js"></script>
+  <script>
+    function money(n) { return '$' + Math.round(n).toLocaleString(); }
+    function calc() {
+      const num = Math.max(1, parseInt(document.getElementById('numshafts').value) || 1);
+      const rebuild = parseFloat(document.getElementById('rebuild').value) || 0;
+      const downrate = parseFloat(document.getElementById('downrate').value) || 0;
+      const days = parseFloat(document.getElementById('days').value) || 0;
+      const sleeve = parseFloat(document.getElementById('sleevecost').value) || 0;
+      const alt = parseFloat(document.getElementById('altcost').value) || 0;
+
+      // Over a 3-year horizon, economy sleeve fails ~2x (needs 2nd rebuild + 2nd sleeve).
+      // Model: rebuild + downtime = one rebuild event. Economy pays it twice over the horizon.
+      const rebuildEvent = rebuild + downrate*days;
+      // Economy: 2 rebuild events + 2 economy sleeves. DuraSleeve: 1 rebuild event avoided + 1 sleeve.
+      // Since DuraSleeve lasts ~2x, over the horizon it avoids the 2nd rebuild entirely.
+      const dsTotal = num * (sleeve);
+      const altTotal = num * (2*alt + 2*rebuildEvent);
+      const perRebuildSavings = rebuildEvent*2 + 2*alt - sleeve;
+      const totalSaved = Math.max(0, altTotal - dsTotal);
+
+      document.getElementById('big').textContent = money(totalSaved);
+      document.getElementById('biglab').textContent = 'Estimated lifetime savings with DuraSleeve (over' + (num>1?' '+num+' shafts':' one shaft') + ')';
+      document.getElementById('years').textContent = num > 1 ? num + ' shafts' : 'One shaft';
+      document.getElementById('rows').innerHTML =
+        `<div class="result-row"><span>Economy sleeve path (2 rebuilds)</span><b>${money(altTotal)}</b></div>` +
+        `<div class="result-row"><span>DuraSleeve path</span><b style="color:var(--yellow);">${money(dsTotal)}</b></div>` +
+        `<div class="result-row"><span>Savings per rebuild avoided</span><b>${money(perRebuildSavings)}</b></div>`;
+    }
+    document.getElementById('calcbtn').addEventListener('click', calc);
+    calc();
+  </script>
+</body>
+</html>

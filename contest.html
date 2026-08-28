@@ -6,69 +6,58 @@
   <title>DuraSleeve Repair Contest | Show Us Your Repair</title>
   <meta name="description" content="Show us how a DuraSleeve got equipment running. Snap a photo, enter your email, add a comment, and enter the DuraSleeve repair contest." />
   <link rel="icon" href="/ds-website/media/Dura-Sleeve-Inc-1C.webp" />
-  
-  <script type="module" crossorigin src="/ds-website/assets/contest-9cEJpW2J.js"></script>
-  <link rel="modulepreload" crossorigin href="/ds-website/assets/main-CAn6GJ1W.js">
-  <link rel="stylesheet" crossorigin href="/ds-website/assets/main-BgQpmMoT.css">
+  <link rel="stylesheet" href="/ds-website/site.css" />
 </head>
 <body>
   <header class="hdr">
     <div class="hdr-inner">
-      <a class="logo" href="/ds-website/">
-        <img src="/ds-website/media/Dura-Sleeve-Inc-logo.webp" alt="DuraSleeve" />
-        <span class="word">DuraSleeve<small>Repair, don't replace</small></span>
-      </a>
+      <a class="logo" href="/ds-website/index.html"><img src="/ds-website/media/Dura-Sleeve-Inc-logo.webp" alt="DuraSleeve" /><span>DuraSleeve<small>Repair, don't replace</small></span></a>
       <nav class="nav" id="nav"></nav>
       <button class="nav-toggle" aria-label="Menu">☰</button>
     </div>
   </header>
 
-  <section style="padding-top:40px;">
-    <div class="wrap">
-      <p class="crumbs"><a href="/ds-website/">Home</a> / Contest</p>
-      <div class="sec-head mt-s">
-        <span class="eyebrow eyebrow-dark">Repair contest</span>
-        <h1>Show us your repair</h1>
-        <p>Got equipment running again with a DuraSleeve? Submit a photo and tell us about it. It takes about a minute from your phone.</p>
-        <div class="mt-s" style="display:flex;gap:18px;flex-wrap:wrap;">
-          <div class="flex" style="gap:10px;"><span class="badge">Prizes</span><span style="color:var(--text-dim);font-size:15px;">Win a <strong style="color:var(--text);">$200 Amazon gift card</strong></span></div>
-          <div class="flex" style="gap:10px;"><span class="badge">The task</span><span style="color:var(--text-dim);font-size:15px;">Photo + email + a sentence about your repair</span></div>
-        </div>
-      </div>
+  <section class="hero" style="min-height:40vh;">
+    <div class="overlay"></div>
+    <div class="content">
+      <p class="crumbs"><a href="/ds-website/index.html">Home</a> / Contest</p>
+      <span class="eyebrow">Repair contest</span>
+      <h1>Show us your repair</h1>
+      <p class="lead">Got equipment running again with a DuraSleeve? Submit a photo and tell us about it. It takes about a minute from your phone. <b>Win a $200 Amazon gift card.</b></p>
     </div>
   </section>
 
-  <section style="padding-top:0;">
+  <section class="sec">
     <div class="wrap">
-      <div class="comp" style="grid-template-columns:1fr 1.4fr;">
+      <div class="comp" style="grid-template-columns:1fr 1.3fr;">
         <div>
-          <div class="sec-head">
-            <span class="eyebrow eyebrow-dark">How it works</span>
+          <div class="sec-head" data-reveal>
+            <span class="eyebrow">How it works</span>
             <h2>Three taps, you're in</h2>
           </div>
-          <div class="steps" style="grid-template-columns:1fr;">
+          <div class="steps" style="grid-template-columns:1fr;" data-reveal>
             <div class="step"><div class="n">1</div><div><h4>Snap it</h4><p>Take a photo of your repair — before or after.</p></div></div>
-            <div class="step"><div class="n">2</div><div><h4>Drop your email</h4><p>So we can reach you if you win.</p></div></div>
-            <div class="step"><div class="n">3</div><div><h4>Add a comment</h4><p>A sentence or two about the repair. Done.</p></div></div>
+            <div class="step" data-reveal data-reveal-delay="1"><div class="n">2</div><div><h4>Drop your email</h4><p>So we can reach you if you win.</p></div></div>
+            <div class="step" data-reveal data-reveal-delay="2"><div class="n">3</div><div><h4>Add a comment</h4><p>A sentence or two about the repair. Done.</p></div></div>
           </div>
         </div>
 
-        <div class="card" style="padding:24px;">
-          <h3 style="margin:0 0 16px;">Enter the contest</h3>
+        <div class="card" style="padding:28px;background:#fff;border:1px solid var(--line-light);" data-reveal>
+          <h3 style="margin:0 0 18px;">Enter the contest</h3>
           <form id="contest-form" class="form">
             <div class="field">
               <label>Your repair photo</label>
-              <div class="photo-drop" id="drop" tabindex="0">
+              <label class="photo-drop" for="file" id="drop" tabindex="0">
                 <div class="out" id="drop-out">📷</div>
                 <div class="t" id="drop-t">Tap to add a photo</div>
                 <div class="s" id="drop-s">JPG, PNG, or a shot from your phone camera</div>
-              </div>
-              <div class="photo-preview" id="preview" style="display:none;">
+              </label>
+              <input type="file" id="file" name="photo" accept="image/*" style="position:absolute;width:1px;height:1px;opacity:0;overflow:hidden;" />
+              <div class="photo-preview" id="preview" style="display:none;margin-top:12px;">
                 <img id="preview-img" alt="Photo preview" />
                 <button type="button" class="rm" id="preview-rm">Remove</button>
               </div>
-              <input type="file" id="file" accept="image/*" capture="environment" style="display:none;" />
-              <span class="hint">On a phone, this opens your camera. Max ~15MB.</span>
+              <span class="hint">On a phone this opens your camera; on desktop it opens the file picker. Max ~15MB.</span>
             </div>
 
             <div class="field">
@@ -77,50 +66,135 @@
             </div>
 
             <div class="field">
-              <label for="name">Your name <span style="font-weight:400;color:var(--text-more-dim);">(optional)</span></label>
+              <label for="name">Your name <span style="font-weight:400;opacity:.6;">(optional)</span></label>
               <input type="text" id="name" placeholder="First and last name" />
             </div>
 
             <div class="field">
               <label for="comments">Tell us about the repair</label>
-              <textarea id="comments" placeholder="e.g. Worn truck seal journal, repaired with a DuraSleeve and running again — saved the replacement cost." rows="3"></textarea>
+              <textarea id="comments" rows="3" placeholder="e.g. Worn truck seal journal, repaired with a DuraSleeve and running again — saved the replacement cost."></textarea>
             </div>
 
             <div class="field">
-              <label for="application">Application <span style="font-weight:400;color:var(--text-more-dim);">(optional)</span></label>
+              <label for="application">Application <span style="font-weight:400;opacity:.6;">(optional)</span></label>
               <select id="application">
                 <option value="">Choose one (optional)</option>
-                <option>Truck / heavy duty</option>
-                <option>Industrial gear reducer</option>
-                <option>Pump / motor</option>
-                <option>Agriculture</option>
-                <option>Marine</option>
-                <option>Other</option>
+                <option>Truck / heavy duty</option><option>Industrial gear reducer</option><option>Pump / motor</option><option>Agriculture</option><option>Marine</option><option>Other</option>
               </select>
             </div>
 
-            <button type="submit" class="btn btn-primary btn-lg" id="submit">
+            <button type="submit" class="btn btn-yellow btn-lg" id="submit">
               <span class="loader" id="submit-loader"></span><span id="submit-txt">Submit my repair</span>
             </button>
-            <p class="hint">By entering you agree we can share your photo on our site and social to celebrate repairs. We'll only use your email to contact you about the contest.</p>
+            <p class="hint">By entering you agree we can share your photo on our site and social to celebrate repairs. We'll only use your email to contact you about the contest. See our <a href="/ds-website/privacy.html">privacy policy</a>.</p>
           </form>
         </div>
       </div>
     </div>
   </section>
 
-  <section style="background:var(--bg-2);">
+  <section class="sec dark">
     <div class="wrap center">
-      <div class="sec-head" style="margin:0 auto;">
+      <div class="sec-head" style="margin:0 auto;" data-reveal>
         <h2>Not a DuraSleeve user yet?</h2>
         <p>See what the sleeve can do, find your size, or read the history.</p>
       </div>
-      <div class="mt-m">
-        <a class="btn btn-primary" href="/ds-website/products.html">Find my size</a>&nbsp;&nbsp;<a class="btn btn-ghost" href="/ds-website/proof.html">See the proof</a>
+      <div class="mt-m" data-reveal>
+        <a class="btn btn-blue" href="/ds-website/products.html#finder">Find my size</a>&nbsp;&nbsp;<a class="btn btn-ghost" href="/ds-website/proof.html" style="color:#fff;">See the proof</a>
       </div>
     </div>
   </section>
 
   <footer class="ftr" id="footer"></footer>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="/ds-website/config.js"></script>
+  <script>
+    window.__BASE__ = '/ds-website';
+  </script>
+  <script src="/ds-website/site.js"></script>
+  <script>
+    function toast(msg, kind) {
+      let t = document.getElementById('toast');
+      if (!t) { t = document.createElement('div'); t.id='toast'; t.className='toast'; document.body.appendChild(t); }
+      t.textContent = msg; t.className = 'toast show ' + (kind||'');
+      clearTimeout(t._tm); t._tm = setTimeout(()=>{ t.className='toast'; }, 3600);
+    }
+    function setLoader(el, on) { if (el) el.classList.toggle('on', on); }
+
+    const sbUrl = (typeof window.__SUPABASE_URL__ !== 'undefined') ? window.__SUPABASE_URL__ : '';
+    const sbKey = (typeof window.__SUPABASE_ANON__ !== 'undefined') ? window.__SUPABASE_ANON__ : '';
+    const sb = (sbUrl && sbKey && window.supabase) ? window.supabase.createClient(sbUrl, sbKey) : null;
+
+    // Photo select: label wraps input, so click always opens picker (desktop + mobile).
+    const file = document.getElementById('file');
+    const preview = document.getElementById('preview');
+    const previewImg = document.getElementById('preview-img');
+    const drop = document.getElementById('drop');
+    let fileData = null;
+
+    // On mobile touch devices, prompt the camera directly when supported.
+    if (window.matchMedia && window.matchMedia('(pointer:coarse)').matches) {
+      file.setAttribute('capture', 'environment');
+    }
+
+    file.addEventListener('change', (e) => {
+      const f = e.target.files[0];
+      if (!f) return;
+      if (!f.type.match(/^image\//)) { toast('Please choose an image file.', 'err'); return; }
+      if (f.size > 15*1024*1024) { toast('That file is over 15MB. Try a smaller photo.', 'err'); return; }
+      fileData = f;
+      const r = new FileReader();
+      r.onload = () => { previewImg.src = r.result; preview.style.display='block'; drop.style.display='none'; };
+      r.readAsDataURL(f);
+    });
+    document.getElementById('preview-rm').addEventListener('click', () => {
+      fileData = null; file.value = ''; preview.style.display='none'; drop.style.display='block';
+    });
+    drop.addEventListener('keydown', (e) => { if (e.key==='Enter'||e.key===' ') { e.preventDefault(); file.click(); } });
+
+    // Submit
+    const form = document.getElementById('contest-form');
+    const submitBtn = document.getElementById('submit');
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const email = document.getElementById('email').value.trim();
+      const name = document.getElementById('name').value.trim();
+      const comments = document.getElementById('comments').value.trim();
+      const application = document.getElementById('application').value;
+      if (!email) { toast('Enter your email address.', 'err'); return; }
+      if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) { toast('That email looks off. Check it.', 'err'); return; }
+      if (!fileData) { toast('Add a photo of your repair first.', 'err'); return; }
+      if (!sb) { toast('Upload service is temporarily unavailable. Please try again soon.', 'err'); return; }
+
+      setLoader(document.getElementById('submit-loader'), true);
+      submitBtn.disabled = true; submitBtn.style.opacity = .7;
+      try {
+        const ext = (fileData.name.split('.').pop() || 'jpg').toLowerCase();
+        const path = `repairs/${Date.now()}-${Math.random().toString(36).slice(2,8)}.${ext}`;
+        const { error: upErr } = await sb.storage.from('repair-photos').upload(path, fileData, { contentType: fileData.type, upsert: false });
+        if (upErr) throw new Error('Upload: ' + upErr.message);
+        const { data: pub, error: pubErr } = await sb.storage.from('repair-photos').getPublicUrl(path);
+        const photoUrl = pub ? pub.publicUrl : '';
+        const { error: insErr } = await sb.from('contest_entries').insert({
+          email, name: name || null, comments: comments || null, application: application || null,
+          photo_path: path, photo_url: photoUrl, created_at: new Date().toISOString(),
+        });
+        if (insErr) throw new Error('Save: ' + insErr.message);
+        form.innerHTML = `
+          <div class="center" style="padding:24px 0;">
+            <div style="font-size:54px;">🎉</div>
+            <h3 style="margin:10px 0 6px;">You're entered!</h3>
+            <p style="color:var(--ink-3);">Thanks for sharing your repair, ${name || 'friend'}. We'll contact you at <strong>${email}</strong> if you win.</p>
+            <a class="btn btn-blue" href="/ds-website/index.html">Back home</a>
+          </div>`;
+        toast('Submission saved.', 'ok');
+      } catch (err) {
+        console.error(err);
+        toast('Something went wrong saving your entry. Please try again.', 'err');
+        setLoader(document.getElementById('submit-loader'), false);
+        submitBtn.disabled = false; submitBtn.style.opacity = 1;
+      }
+    });
+  </script>
 </body>
 </html>

@@ -4,99 +4,154 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <title>DuraSleeve Products &amp; Sizing | Find Your Sleeve</title>
-  <meta name="description" content="Browse DuraSleeve shaft repair sleeves and match your measured shaft diameter to the right part number using the sizing chart." />
+  <meta name="description" content="Browse all DuraSleeve shaft repair sleeve sizes. Switch between imperial and metric, enter a fraction or millimeter measurement, and see the nearest matching sleeves." />
   <link rel="icon" href="/ds-website/media/Dura-Sleeve-Inc-1C.webp" />
-  
-  <script type="module" crossorigin src="/ds-website/assets/products-BquIzlld.js"></script>
-  <link rel="modulepreload" crossorigin href="/ds-website/assets/main-CAn6GJ1W.js">
-  <link rel="stylesheet" crossorigin href="/ds-website/assets/main-BgQpmMoT.css">
+  <link rel="stylesheet" href="/ds-website/site.css" />
 </head>
 <body>
   <header class="hdr">
     <div class="hdr-inner">
-      <a class="logo" href="/ds-website/">
-        <img src="/ds-website/media/Dura-Sleeve-Inc-logo.webp" alt="DuraSleeve" />
-        <span class="word">DuraSleeve<small>Repair, don't replace</small></span>
-      </a>
+      <a class="logo" href="/ds-website/index.html"><img src="/ds-website/media/Dura-Sleeve-Inc-logo.webp" alt="DuraSleeve" /><span>DuraSleeve<small>Repair, don't replace</small></span></a>
       <nav class="nav" id="nav"></nav>
       <button class="nav-toggle" aria-label="Menu">☰</button>
     </div>
   </header>
 
-  <section style="padding-top:40px;">
-    <div class="wrap">
-      <p class="crumbs"><a href="/ds-website/">Home</a> / Products</p>
-      <div class="sec-head mt-s">
-        <span class="eyebrow eyebrow-dark">Shaft repair sleeves</span>
-        <h1>Find your DuraSleeve</h1>
-        <p>Thin-walled, press-fit repair sleeves for worn or damaged shaft seal surfaces. SAE/ANSI 304 stainless steel with a hard chrome surface. Use the same seal size.</p>
-      </div>
+  <section class="hero" style="min-height:52vh;">
+    <div class="overlay"></div>
+    <div class="content">
+      <p class="crumbs"><a href="/ds-website/index.html">Home</a> / Products</p>
+      <span class="eyebrow">Products &amp; sizing</span>
+      <h1>Find your DuraSleeve</h1>
+      <p class="lead">A thin-walled, hard-chrome repair sleeve for worn or damaged shaft seal surfaces. Switch between <b>imperial</b> and <b>metric</b>, enter a fraction or a millimeter measurement, and we'll show the best matches.</p>
     </div>
   </section>
 
-  <section style="padding-top:0;">
+  <section class="sec" id="finder" style="background:var(--bg-light-2);">
     <div class="wrap">
-      <div class="sec-head">
-        <span class="eyebrow eyebrow-dark">Step 1 — measure</span>
-        <h2>Measure the shaft, not the groove</h2>
-        <p>Measure the shaft in three places and use the average. That average diameter is the number you match to the sizing chart.</p>
+      <div class="sec-head" data-reveal>
+        <span class="eyebrow">Find my size</span>
+        <h2>Match your shaft to a sleeve</h2>
+        <p>Measure the shaft in three places and use the average. Enter that measurement below.</p>
       </div>
-      <div class="steps">
-        <div class="step"><div class="n">1</div><div><h4>Wrap a caliper or mic</h4><p>Measure at the unworn part of the shaft seal journal.</p></div></div>
-        <div class="step"><div class="n">2</div><div><h4>Do it in three spots</h4><p>Take three readings around the shaft and average them.</p></div></div>
-        <div class="step"><div class="n">3</div><div><h4>Match it below</h4><p>Enter your average diameter and we'll show matching part numbers.</p></div></div>
-      </div>
-    </div>
-  </section>
 
-  <section style="background:var(--bg-2);">
-    <div class="wrap">
-      <div class="sec-head">
-        <span class="eyebrow eyebrow-dark">Step 2 — match</span>
-        <h2>Sizing lookup (imperial)</h2>
-        <p>Type your measured shaft diameter in inches. We'll find the DuraSleeve part numbers whose range covers it.</p>
-      </div>
-      <div class="form" style="max-width:560px;">
-        <div class="field">
-          <label for="shaftdia">Measured shaft diameter (inches)</label>
-          <div style="display:flex;gap:10px;">
-            <input type="number" step="0.001" min="0.5" max="3" placeholder="e.g. 1.378" id="shaftdia" inputmode="decimal" />
-            <button class="btn btn-primary" id="findbtn" style="white-space:nowrap;">Find size</button>
+      <div class="calc" data-reveal style="grid-template-columns:1fr 1fr;">
+        <div class="inputs" style="background:#fff;border:1px solid var(--line-light);border-radius:var(--radius);padding:26px;">
+          <div class="row">
+            <div class="field">
+              <label>Units</label>
+              <select id="unit">
+                <option value="in">Imperial (inches)</option>
+                <option value="mm">Metric (mm)</option>
+              </select>
+            </div>
+            <div class="field">
+              <label>Measurement</label>
+              <input type="text" id="measurement" placeholder="1-3/8, 1.375, or 35mm" inputmode="text" />
+            </div>
           </div>
-          <span class="hint">Use the average of three readings. Values in fractional inches work too — e.g. 1-3/8 &rarr; 1.375.</span>
+          <div class="field">
+            <label>Or pick from the list</label>
+            <select id="browse"><option value="">Choose a size…</option></select>
+          </div>
+          <button class="btn btn-blue btn-lg" id="findbtn">Find matching sizes</button>
+          <p class="hint mt-s">Examples: <code>1-3/8</code>, <code>0.875</code>, <code>35mm</code>. Try a size you think is close — we always show the nearest matches.</p>
+          <div id="error-msg" style="color:var(--blue);font-weight:600;display:none;margin-top:8px;"></div>
+        </div>
+
+        <div class="calc-output" id="results">
+          <p class="muted" style="margin:0 0 12px;">Results</p>
+          <div id="result-inner" class="muted">Enter a measurement or pick a size to see matching sleeves.</div>
         </div>
       </div>
-      <div id="results" class="mt-m" style="display:none;"></div>
     </div>
   </section>
 
-  <section>
+  <section class="sec dark">
     <div class="wrap">
-      <div class="sec-head">
-        <span class="eyebrow eyebrow-dark">Why DuraSleeve</span>
+      <div class="sec-head" data-reveal>
+        <span class="eyebrow">Full size list</span>
+        <h2>Browse all sleeves</h2>
+        <p>Every DuraSleeve part, with its shaft range in both imperial and metric.</p>
+      </div>
+      <div class="grid" id="all-sizes" data-reveal></div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="wrap">
+      <div class="sec-head" data-reveal>
+        <span class="eyebrow">Why DuraSleeve</span>
         <h2>Built to last the repair</h2>
       </div>
       <div class="grid">
-        <div class="card"><div class="body"><h3>Hard chrome surface</h3><p>Around 68 Rockwell C, supporting wear resistance, low friction, and corrosion resistance. The surface finish is the whole point.</p></div></div>
-        <div class="card"><div class="body"><h3>Stainless steel</h3><p>SAE/ANSI 304 stainless steel core. Strong, corrosion-resistant, and machinable for the repair fit.</p></div></div>
-        <div class="card"><div class="body"><h3>Interference fit</h3><p>Designed as a press fit / interference fit. It should not slide on freely. Don't use heat to install it.</p></div></div>
-        <div class="card"><div class="body"><h3>Same seal size</h3><p>Install over the worn surface and reuse the original seal size — no shaft replacement, less downtime.</p></div></div>
-      </div>
-    </div>
-  </section>
-
-  <section style="background:var(--bg-2);">
-    <div class="wrap center">
-      <div class="sec-head" style="margin:0 auto;">
-        <h2>Need help choosing?</h2>
-        <p>For application questions, installation guidance, or quote requests, get in touch with the DuraSleeve team.</p>
-      </div>
-      <div class="mt-m">
-        <a class="btn btn-primary" href="/ds-website/contest.html">Send a repair photo</a>&nbsp;&nbsp;<a class="btn btn-ghost" href="/ds-website/history.html">Read our history</a>
+        <div class="card"><div class="media" style="aspect-ratio:auto;padding:22px;"><h3>Hard chrome surface</h3><p>Around 68 Rockwell C, supporting wear resistance, low friction, and corrosion resistance.</p></div></div>
+        <div class="card"><div class="media" style="aspect-ratio:auto;padding:22px;"><h3>Stainless steel</h3><p>SAE/ANSI 304 stainless steel core. Strong, corrosion-resistant.</p></div></div>
+        <div class="card"><div class="media" style="aspect-ratio:auto;padding:22px;"><h3>Interference fit</h3><p>Designed as a press fit. It should not slide on freely. Don't use heat to install.</p></div></div>
       </div>
     </div>
   </section>
 
   <footer class="ftr" id="footer"></footer>
+  <script>
+    window.__BASE__ = '/ds-website';
+  </script>
+  <script src="/ds-website/site.js"></script>
+  <script>
+    // Sizing finder (self-contained).
+    function parseLen(input) {
+      if (input == null) return null;
+      const s = String(input).trim().toLowerCase().replace(/\s+/g, '');
+      if (!s) return null;
+      if (s.endsWith('mm')) { const v = parseFloat(s.replace('mm','')); return isNaN(v) ? null : { mm:v, in:v/25.4 }; }
+      const frac = s.match(/^(-?\d+(?:\.\d+)?)?(?:[\-+ ]+)?(\d+)\/(\d+)$/);
+      if (frac) { const whole = frac[1]?parseFloat(frac[1]):0, num=parseFloat(frac[2]), den=parseFloat(frac[3]); if(!den) return null; const inches=whole+num/den; return { in:inches, mm:inches*25.4 }; }
+      const plain = parseFloat(s); if (isNaN(plain)) return null; return { in:plain, mm:plain*25.4 };
+    }
+    function findSizes(sizes, targetIn, unit) {
+      const scored = sizes.map(s => {
+        const mid = unit === 'mm' ? (s.min_mm + s.max_mm)/2 : (s.min + s.max)/2;
+        const t = unit === 'mm' ? targetIn*25.4 : targetIn;
+        return { s, dist: Math.abs(mid - t) };
+      }).sort((a,b)=>a.dist-b.dist);
+      return scored;
+    }
+    const fmtIn = v => v==null?'—':v.toFixed(3)+'"';
+    const fmtMm = v => v==null?'—':v.toFixed(1)+' mm';
+
+    let SIZES = [];
+    async function load() {
+      const r = await fetch('/ds-website/data/sizes.json'); SIZES = await r.json();
+      SIZES.sort((a,b)=>a.nominal-b.nominal); populateBrowse(); buildAll();
+    }
+    function populateBrowse() {
+      const sel = document.getElementById('browse');
+      sel.innerHTML = '<option value="">Choose a size…</option>' + SIZES.map(s => `<option value="${s.pn}">${s.pn} — ${fmtIn(s.nominal)} / ${fmtMm(s.nominal_mm)}</option>`).join('');
+    }
+    function buildAll() {
+      document.getElementById('all-sizes').innerHTML = SIZES.map(s => `<a class="card" href="/ds-website/products/${s.pn}.html" style="background:var(--bg-dark-2);color:var(--paper);"><div class="body"><h3>DuraSleeve ${s.pn}</h3><p>Shaft ${fmtIn(s.min)}–${fmtIn(s.max)} &middot; ${fmtMm(s.min_mm)}–${fmtMm(s.max_mm)}</p><span class="link" style="color:var(--yellow);">View part <span class="arrow">→</span></span></div></a>`).join('');
+    }
+    function render(results, targetText) {
+      const inner = document.getElementById('result-inner');
+      const rows = results.slice(0,6).map(r => {
+        const s = r.s; const best = r.dist < 0.02 ? '<span style="color:#3ecf7a;">best</span>' : '<span style="color:var(--yellow);">nearest</span>';
+        return `<div class="result-row"><span><a href="/ds-website/products/${s.pn}.html" style="color:var(--yellow);">${s.pn}</a> &middot; ${fmtIn(s.nominal)} / ${fmtMm(s.nominal_mm)}</span><b>${best} ${fmtIn(s.min)}–${fmtIn(s.max)}</b></div>`;
+      }).join('');
+      inner.innerHTML = `<p class="muted" style="margin:0 0 14px;">Matches for <b style="color:#fff;">${targetText}</b></p>${rows}`;
+    }
+    function run() {
+      const unit = document.getElementById('unit').value;
+      const raw = document.getElementById('measurement').value;
+      const err = document.getElementById('error-msg'); err.style.display='none';
+      if (!raw) { err.style.display='block'; err.textContent='Enter a measurement first.'; return; }
+      const parsed = parseLen(raw);
+      if (!parsed) { err.style.display='block'; err.textContent="That doesn't look like a size. Try 1-3/8, 0.875, or 35mm."; return; }
+      render(findSizes(SIZES, parsed.in, unit), raw);
+    }
+    document.getElementById('findbtn').addEventListener('click', run);
+    document.getElementById('measurement').addEventListener('keydown', e => { if (e.key==='Enter') run(); });
+    document.getElementById('browse').addEventListener('change', e => { if (e.target.value) location.href='/ds-website/products/'+e.target.value+'.html'; });
+    load();
+  </script>
 </body>
 </html>

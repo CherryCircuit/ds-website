@@ -1,0 +1,124 @@
+{
+  "industries": [
+    {
+      "slug": "agriculture",
+      "label": "Agriculture",
+      "tagline": "Pumps, PTOs, irrigation and drivetrains that stay running through the season",
+      "intro": "Farming runs on equipment that can't be down during the window that matters. Worn shaft seal surfaces on pumps, PTO shafts and irrigation drives cause leaks and failures at the worst time. A press-fit DuraSleeve repairs the shaft in minutes, so the machine is back in the field.",
+      "benefits": [
+        "Repair a worn pump or PTO shaft without replacing the shaft",
+        "Cut costly downtime during planting and harvest windows",
+        "Use the same seal size, no machining or engineering changes",
+        "Hard chrome surface resists abrasion from dust, sand and contaminants",
+        "Corrosion-resistant 304 stainless steel stands up to water and chemical exposure",
+        "Install in minutes with the included tool, no special training"
+      ],
+      "case_study": {
+        "label": "Representative case",
+        "summary": "A farm operation repaired a worn irrigation pump shaft seal surface with a DuraSleeve. The pump was back running the same day — no shaft replacement, at a fraction of the cost of a rebuild.",
+        "placeholder_image": "close-up of a weathered pump shaft seal surface on a farm irrigation drive, shallow depth of field, warm late-afternoon light, beads of water"
+      },
+      "related_industries": ["industrial", "marine", "trucking"]
+    },
+    {
+      "slug": "mining",
+      "label": "Mining",
+      "tagline": "Heavy equipment, hydraulic systems and conveyors that can't afford extended downtime",
+      "intro": "In mining, downtime is measured in production losses, not hours. Worn seal surfaces on conveyor drives, hydraulic systems and mobile equipment cascade into bearing and seal failure. DuraSleeve puts the shaft surface back to spec without a full rebuild.",
+      "benefits": [
+        "Repair worn shafts on conveyors, crushers and mobile equipment in place",
+        "Avoid expensive shaft replacement and long rebuild lead times",
+        "Hard chrome surface resists the abrasion of dust, ore and slurry",
+        "Corrosion-resistant base handles wet and aggressive environments",
+        "Restore the seal surface so the same-size seal seats and holds",
+        "Reduce downtime and the cascading cost of component failure"
+      ],
+      "case_study": {
+        "label": "Representative case",
+        "summary": "A mining operation repaired a worn conveyor drive shaft with a DuraSleeve, keeping production alive while the replacement shaft was on order. The repair held through a full operating season.",
+        "placeholder_image": "industrial conveyor drive shaft close-up in a plant with dust in the air, cool to neutral industrial light, equipment in soft focus behind"
+      },
+      "related_industries": ["industrial", "rail", "trucking"]
+    },
+    {
+      "slug": "rail",
+      "label": "Rail",
+      "tagline": "Gearboxes, locomotives and auxiliary fluid systems",
+      "intro": "Rail equipment lives on reliability. Worn shaft seal surfaces on traction gearboxes, auxiliaries and fluid systems lead to leaks and premature bearing failure. A precision press-fit sleeve restores the counterface surface quickly.",
+      "benefits": [
+        "Repair worn shaft seal surfaces on gearboxes and auxiliaries",
+        "Avoid removing and machining shafts on critical rail equipment",
+        "Same seal size, simple installation with the included tool",
+        "Hard chrome surface for long wear in high-cycle operation",
+        "Stainless steel resists corrosion from water and contaminants",
+        "Get equipment back to schedule without a full teardown"
+      ],
+      "case_study": {
+        "label": "Representative case",
+        "summary": "A rail workshop repaired a worn gearbox input shaft with a DuraSleeve during a scheduled window, returning the unit to service without replacement machining.",
+        "placeholder_image": "rail locomotive gearbox shaft in a maintenance pit, industrial rail workshop, balanced cool lighting, metal surfaces with oil sheen"
+      },
+      "related_industries": ["industrial", "marine", "mining"]
+    },
+    {
+      "slug": "marine",
+      "label": "Marine",
+      "tagline": "Axle shafts, spindles, hydraulics and water pumps in saltwater environments",
+      "intro": "Marine shafts face saltwater, spray and constant load. Worn seal surfaces on axle shafts, spindles, hydraulic systems and water pumps lead to leaks that are hard to trace and expensive to fix. DuraSleeve repairs the surface with a corrosion-resistant sleeve.",
+      "benefits": [
+        "Repair axle shafts, spindles and pump shafts without replacement",
+        "Corrosion-resistant 304 stainless steel stands up to saltwater",
+        "Hard chrome surface resists wear and abrasion",
+        "Restore the seal surface so the original-size seal seats properly",
+        "In-water and workshop repairs with minimal downtime",
+        "Installs with the included tool, no machining"
+      ],
+      "case_study": {
+        "label": "Representative case",
+        "summary": "A water pump shaft in a vessel was worn at the seal. A DuraSleeve repaired the surface and the pump resealed with the original seal size, avoiding a haul-out.",
+        "placeholder_image": "marine shaft with water droplets, near a boat engine room, cool blue light, stainless and chrome surfaces"
+      },
+      "related_industries": ["rail", "industrial", "trucking"]
+    },
+    {
+      "slug": "trucking",
+      "label": "Trucking & Transportation",
+      "tagline": "Trucks, trailers, axles and drivetrains that need to keep rolling",
+      "intro": "A parked truck is lost revenue. Worn shaft seal surfaces on axles, drivetrains and wheel hubs cause leaks and failures that ground a vehicle. DuraSleeve repairs the surface in minutes, getting the truck back on the road.",
+      "benefits": [
+        "Repair worn axle and drivetrain seal surfaces without shaft replacement",
+        "Cut downtime and keep revenue-generating miles rolling",
+        "Same seal size, no machining or engineering changes",
+        "Hard chrome surface resists wear from road grime and contaminants",
+        "Corrosion-resistant stainless steel for harsh conditions",
+        "Fast, simple installation with the included tool"
+      ],
+      "case_study": {
+        "label": "Representative case",
+        "summary": "A fleet repaired a worn axle shaft seal surface on a heavy truck with a DuraSleeve, returning it to service the same day instead of waiting on a replacement shaft.",
+        "placeholder_image": "heavy truck axle end and brake assembly, service bay, neutral industrial light, grease and metal details"
+      },
+      "related_industries": ["agriculture", "mining", "industrial"]
+    },
+    {
+      "slug": "industrial",
+      "label": "Industrial",
+      "tagline": "Pumps, motors, powertrain, blowers and gearboxes",
+      "intro": "Every plant has a worn shaft somewhere. Pumps, motors, gearboxes, blowers and powertrain components all wear at the seal surface. A press-fit DuraSleeve restores that surface quickly, without a shutdown for machining or replacement.",
+      "benefits": [
+        "Repair worn shafts on pumps, motors, gearboxes and blowers",
+        "Avoid expensive machining, grinding or complete shaft replacement",
+        "Reduce downtime and the cost of lost production",
+        "Same seal size, no engineering changes required",
+        "Hard chrome surface for long wear and low friction",
+        "Corrosion-resistant stainless steel for plant environments"
+      ],
+      "case_study": {
+        "label": "Representative case",
+        "summary": "An industrial plant repaired a worn gearbox input shaft with a DuraSleeve during a scheduled maintenance window, avoiding a weeks-long rebuild and costly downtime.",
+        "placeholder_image": "industrial gearbox and motor shaft in a clean plant, cool neutral light, precision metal surfaces, shallow focus"
+      },
+      "related_industries": ["mining", "agriculture", "rail"]
+    }
+  ]
+}
